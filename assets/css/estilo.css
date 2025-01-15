@@ -1,0 +1,460 @@
+*{
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
+
+body{
+  margin:0;
+  font-family: 'Arial', sans-serif;
+}
+.degrade-box {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(to right, #2b2b2d, #114e47, #006392);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+
+/*Estilização dos textos*/
+.texto{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  text-align: center;
+}
+.box .search[input]{
+  text-align: center;
+}
+.texto h1{
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  display: block;
+  font-size: 4em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  unicode-bidi: isolate;
+}
+.texto p{
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/*Estilização das tabelas*/
+    .contact-group-table th {
+        text-align: left; /* Alinha os cabeçalhos à esquerda */
+    }
+
+.card-header{
+  background: linear-gradient(to right, #002a3d, #24a394, #006392);
+}
+.styled-table th {
+  border-bottom: none;
+}
+.styled-table thead th:first-of-type {
+  border-bottom: none;
+}
+
+/* Centralizar o conteúdo e adicionar espaçamento nas bordas inferiores */
+.styled-table td, .styled-table th {
+  border-bottom: 2px solid #000; /* Exemplo de borda inferior */
+  text-align: center; /* Centraliza o conteúdo */
+  padding-left: 40px;  /* Adiciona 10px de espaçamento à esquerda */
+  padding-right: 40px; /* Adiciona 10px de espaçamento à direita */
+  
+}
+
+/* Para o <th> com h4, removendo a borda inferior */
+.styled-table thead th {
+  border-bottom: none;
+}
+
+/* Garantir que o <h4> não tenha margem extra */
+.styled-table thead th h4 {
+  margin-bottom: 0;
+  padding-bottom: 10px; /* Ajuste de espaçamento para o h4 */
+}
+
+.table-wrapper {
+  flex: 1;
+  max-width: 48%; /* Limita a largura para alinhar as tabelas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+  padding-left: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table thead {
+  background-color: #f4f4f4;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .table-container {
+      flex-direction: column;
+  }
+
+  .table-wrapper {
+      max-width: 100%;
+      margin-bottom: 20px;
+  }
+}
+.main-table {
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.main-table td {
+  padding-left: 10px;
+  vertical-align: top;
+}
+
+
+.gb-col-12 {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.whois-result-contact-group__wr {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.whois-result__contact-group {
+    padding: 20px;
+}
+
+.contact-group-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.gb-table-wrapper {
+    overflow-x: hidden; /* Remove a barra de rolagem horizontal */
+}
+
+.gb-table {
+    width: 100%;
+    background-color: #ffffff; /* Fundo branco fixo para toda a tabela */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra nas tabelas */
+}
+
+.gb-table--bordered td,
+.gb-table--bordered th {
+    border-bottom: 1px solid #ddd; /* Apenas bordas inferiores */
+    
+}
+
+.gb-table--compact td,
+.gb-table--compact th {
+    padding: 10px;
+}
+
+.contact-group-table__header {
+    background-color: #ffffff; /* Fundo branco no cabeçalho */
+    color: #333; /* Cor do texto no cabeçalho */
+    text-align: left;
+}
+
+.contact-group-table__row {
+    background-color: #ffffff; /* Fundo branco fixo nas linhas */
+}
+
+td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+th {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.gb-icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: #007BFF;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  flex: 1 1 45%;
+  max-width: 45%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.styled-table thead th {
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+.styled-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.styled-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Remover qualquer efeito hover */
+.styled-table tbody tr:hover {
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .row {
+      flex-wrap: wrap;
+  }
+
+  .table-container {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+}
+.table-container{
+  background-color: #fff;
+}
+/*estilização do bptão*/
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container da pesquisa */
+.pesquisar-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Input de pesquisa */
+.pesquisar-container input[type="search"] {
+  flex: 1; /* Faz o input ocupar mais espaço */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 200px; /* Largura mínima para evitar compressão excessiva */
+}
+
+/* Botão */
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container da pesquisa */
+.pesquisar-container {
+  position: relative; /* Necessário para posicionar o botão dentro do input */
+  width: 100%;
+  max-width: 400px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+/* Input de pesquisa */
+.pesquisar-container input[type="search"] {
+  width: 100%; /* O input ocupa toda a largura disponível */
+  padding: 10px 50px 10px 15px; /* Espaço extra para o botão */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botão */
+/* Estilização geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container da pesquisa */
+.pesquisar-container {
+  position: relative; /* Necessário para posicionar o botão dentro do input */
+  width: 100%;
+  max-width: 400px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+/* Input de pesquisa */
+.pesquisar-container input[type="search"] {
+  width: 100%; /* O input ocupa toda a largura disponível */
+  padding: 10px 50px 10px 15px; /* Espaço extra para o botão */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Botão */
+/* Estilização geral */
+/* Container da pesquisa */
+.pesquisar-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Largura semelhante ao input do Google */
+}
+
+/* Input de pesquisa */
+.pesquisar-container input[type="search"] {
+  width: 100%; /* Ocupa toda a largura do container */
+  padding: 15px 60px 15px 20px; /* Espaçamento interno */
+  font-size: 18px; /* Texto maior */
+  border: 1px solid #ddd; /* Estilo da borda */
+  border-radius: 50px; /* Bordas arredondadas */
+  background-color: #fff; /* Fundo branco */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  box-sizing: border-box;
+  outline: none;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+/* Foco no input */
+.pesquisar-container input[type="search"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Botão */
+/* Estilização geral */
+
+/* Container da pesquisa */
+.pesquisar-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Largura semelhante ao input do Google */
+}
+
+/* Input de pesquisa */
+.pesquisar-container input[type="search"] {
+  width: 100%; /* O input ocupa toda a largura */
+  padding: 15px 60px 15px 20px; /* Espaço interno ajustado */
+  font-size: 18px;
+  border: 1px solid #ddd;
+  border-radius: 50px; /* Bordas arredondadas */
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  outline: none;
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+/* Foco no input */
+.pesquisar-container input[type="search"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+/* Botão */
+.pesquisar-container .btn {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 2px;
+  font-weight: 100%;
+  position: absolute; /* Coloca o botão dentro do input */
+  top: 50%; /* Centraliza verticalmente */
+  right: 20px; /* Espaço da borda direita */
+  transform: translateY(-50%);
+  width: 100px; /* Tamanho do botão */
+  height: 40px; /* Tamanho do botão */
+  border: none;
+  border-radius: 50px; /* Botão circular */
+  background: #0056b3; /* Cor de fundo */
+  color: white; /* Cor do ícone */
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o ícone no botão */
+  transition: background-color 0.3s;
+}
+
+.pesquisar-container .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .pesquisar-container {
+      max-width: 90%; /* O input ocupa quase toda a largura */
+  }
+
+  .pesquisar-container input[type="search"] {
+      padding-right: 60px; /* Ajusta o espaço para o botão */
+  }
+}
+/*
+
+*/
